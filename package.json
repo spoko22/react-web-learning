@@ -49,8 +49,10 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
+    "google-map-react": "^0.24.0",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-scrollable-anchor": "^0.4.2"
   },
   "scripts": {
     "start": "node scripts/start.js",
