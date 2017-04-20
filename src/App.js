@@ -58,12 +58,15 @@ export default () => (
       <ScrollableAnchor id={'section3'}>
       <Section pad='large'
         justify='center'
-        align='center'>
+        align='center'
+        full='true'>
         <Headline margin='none'>
           Section 3
         </Headline>
         <Image src='http://ipl590.org.pl/upload/201703/i590C.jpg' />
-        <SimpleMap style={{height: 300}}/>
+        <Box justify='center' size={{width: 'xlarge', height:'medium'}}>
+          <SimpleMap />
+        </Box>
       </Section>
       </ScrollableAnchor>
     </Article>
