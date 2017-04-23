@@ -1,29 +1,48 @@
-import React, { Component }  from 'react';
+import React from 'react';
 
-import GoogleMapReact from 'google-map-react';
+import Box from 'grommet/components/Box';
+import SimpleMap from '../components/SimpleMap';
+import Image from 'grommet/components/Image';
+import Paragraph from 'grommet/components/Paragraph';
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const Location = () => (
+    <Box direction="column" responsive="true" style={styles.marginTop}>
+        <Box direction="row">
+            <Image src='http://ipl590.org.pl/upload/201703/i590C.jpg' size='medium'/>
+            <Box direction="column" justify="center" style={styles.textBox}>
+                <Paragraph>
+                    Instytut PL590 mieści się
+                    w apartamentach  dawnego
+                    Domu Bankowego
+                    Komunalnej  Kasy Oszczędnościowej, secesyjnej  kamienicy Wilhelma Rakmana.
+                    Powstały w latach 1905-1906
+                    obiekt w nienaruszonym stanie
+                    przetrwał zawirowania wojenne
+                    i polityczne przez  cały wiek XX.
+                </Paragraph>
+                <Paragraph>
+                    Budynek położony przy zbiegu ulicy Poznańskiej 39 z Alejami  Jerozolimskimi 47
+                    zaprojektowany został przez
+                    uznanego, warszawskiego architekta Ludwika Panczakiewicza.
+                </Paragraph>
+            </Box>
+        </Box>
+        <Box style={styles.marginTop}>
+            <Box justify='center' size={{width: 'xlarge', height:'medium'}}>
+                <SimpleMap />
+            </Box>
+        </Box>
+    </Box>
+);
 
-class SimpleMap extends Component {
-  static defaultProps = {
-    center: {lat: 52.237049, lng: 21.017532},
-    zoom: 11
-  };
-
-  render() {
-    return (
-      <GoogleMapReact
-        defaultCenter={this.props.center}
-        defaultZoom={this.props.zoom}
-      >
-        <AnyReactComponent
-          lat={52.2289622}
-          lng={21.0073023}
-          text={'Kreyser Avrora'}
-        />
-      </GoogleMapReact>
-    );
-  }
+const styles = {
+    textBox: {
+        marginLeft: 20,
+        textAlign: 'justify'
+    },
+    marginTop: {
+        marginTop: 25
+    }
 }
 
-export default SimpleMap;
+export default Location;

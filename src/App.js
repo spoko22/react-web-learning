@@ -11,10 +11,9 @@ import Anchor from 'grommet/components/Anchor';
 import Menu from 'grommet/components/Menu';
 import Paragraph from 'grommet/components/Paragraph';
 import Box from 'grommet/components/Box';
-import Image from 'grommet/components/Image';
 
 import AboutSection from './sections/about';
-import SimpleMap from './sections/location';
+import Location from './sections/location';
 
 import ScrollableAnchor, { removeHash } from 'react-scrollable-anchor';
 
@@ -26,9 +25,9 @@ export default () => (
       </Title>
       <Box flex={true} justify='end' direction='row'>
         <Menu direction='row'>
-          <Anchor href='#section1' onClick={()=>removeHash()}> First </Anchor>
-          <Anchor href='#section2' onClick={()=>removeHash()}> Second </Anchor>
-          <Anchor href='#section3' onClick={()=>removeHash()}> Third </Anchor>
+          <Anchor href='#section1' onClick={()=>removeHash()}> O instytucie </Anchor>
+          <Anchor href='#section2' onClick={()=>removeHash()}> Prace badawcze </Anchor>
+          <Anchor href='#section3' onClick={()=>removeHash()}> Lokalizacja </Anchor>
         </Menu>
       </Box>
     </Header>
@@ -61,12 +60,9 @@ export default () => (
         align='center'
         full='true'>
         <Headline margin='none'>
-          Section 3
+          Lokalizacja siedziby
         </Headline>
-        <Image src='http://ipl590.org.pl/upload/201703/i590C.jpg' />
-        <Box justify='center' size={{width: 'xlarge', height:'medium'}}>
-          <SimpleMap />
-        </Box>
+        <Location />
       </Section>
       </ScrollableAnchor>
     </Article>
