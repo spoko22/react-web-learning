@@ -27,8 +27,8 @@ const Location = () => (
                 </Paragraph>
             </Box>
         </Box>
-        <Box style={styles.marginTop}>
-            <Box justify='center' size={{width: 'xlarge', height:'medium'}}>
+        <Box style={styles.marginTop} direction="row" alignSelf="center">
+            <Box size={{width: 'xxlarge', height:'medium'}}  >
                 <SimpleMap />
             </Box>
         </Box>
@@ -43,6 +43,6 @@ const styles = {
     marginTop: {
         marginTop: 25
     }
-}
+};
 
 export default Location;

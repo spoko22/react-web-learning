@@ -21,7 +21,7 @@ export default () => (
   <App>
     <Header fixed='true'>
       <Title>
-        Title
+        IPL590
       </Title>
       <Box flex={true} justify='end' direction='row'>
         <Menu direction='row'>
