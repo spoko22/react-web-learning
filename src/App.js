@@ -42,7 +42,7 @@ export default () => (
             <Section pad='large'
                      justify='center'
                      align='center'
-                     size={{width: 'full', height: 'large'}}
+                     size={{width: 'full', height: 'medium'}}
                      colorIndex='light-2'>
                 <Headline margin='none'>
                     INSTYTUT PL 590
