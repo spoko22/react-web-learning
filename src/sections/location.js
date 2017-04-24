@@ -6,10 +6,10 @@ import Image from 'grommet/components/Image';
 import Paragraph from 'grommet/components/Paragraph';
 
 const Location = () => (
-    <Box direction="column" responsive="true" style={styles.marginTop}>
+    <Box direction="column" responsive="true" style={styles.marginTop} full="horizontal">
         <Box direction="row">
             <Image src='http://ipl590.org.pl/upload/201703/i590C.jpg' size='medium'/>
-            <Box direction="column" justify="center" style={styles.textBox}>
+            <Box direction="column" justify="center" style={styles.textBox} responsive="true">
                 <Paragraph>
                     Instytut PL590 mieści się
                     w apartamentach  dawnego
@@ -27,10 +27,8 @@ const Location = () => (
                 </Paragraph>
             </Box>
         </Box>
-        <Box style={styles.marginTop} direction="row" alignSelf="center">
-            <Box size={{width: 'xxlarge', height:'medium'}}  >
-                <SimpleMap />
-            </Box>
+        <Box style={styles.marginTop} direction="row" alignSelf="center" size={{height:'medium'}} full="horizontal">
+            <SimpleMap />
         </Box>
     </Box>
 );
