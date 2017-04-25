@@ -4,7 +4,7 @@ import MarkerIcon from 'grommet/components/icons/base/FormLocation';
 
 import GoogleMapReact from 'google-map-react';
 
-const AnyReactComponent = () => <MarkerIcon size="large" colorIndex="critical" pad="none"/>;
+const AnyReactComponent = () => <MarkerIcon size="large" colorIndex="critical" pad="none" margi="none"/>;
 
 class SimpleMap extends Component {
   static defaultProps = {
@@ -12,7 +12,7 @@ class SimpleMap extends Component {
         lat: 52.229201,
         lng: 21.009421
       },
-    zoom: 17
+    zoom: 18
 };
 
   render() {
@@ -22,8 +22,8 @@ class SimpleMap extends Component {
         defaultZoom={this.props.zoom}
       >
         <AnyReactComponent
-          lat={52.229201}
-          lng={21.009421}
+          lat={52.229019}
+          lng={21.009688}
         />
       </GoogleMapReact>
     );

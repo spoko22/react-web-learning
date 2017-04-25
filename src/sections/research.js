@@ -6,7 +6,7 @@ import AccordionPanel from 'grommet/components/AccordionPanel';
 
 export default () => (
     <Box full="horizontal">
-        <Accordion size="small" active={0}>
+        <Accordion size="small" active={0} style={{textAlign: 'justify'}}>
             <AccordionPanel heading='Badanie otoczenia gospodarczego'>
                 <Paragraph>
                     Instytut PL590 prowadzi prace badawcze celem udzielenia odpowiedzi co do obecnego stanu obszaru gospodarki

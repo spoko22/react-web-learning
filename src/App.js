@@ -21,7 +21,7 @@ import ResearchSection from './sections/research';
 import ScrollableAnchor, {removeHash, goToTop, goToAnchor} from 'react-scrollable-anchor';
 
 export default () => (
-    <App >
+    <App>
         <Header fixed='true'>
             <Anchor href="#" onClick={() => removeHash()}>
                 <Title>
@@ -38,7 +38,6 @@ export default () => (
         </Header>
 
         <Article>
-            {/*<ScrollableAnchor id={'section1'}>*/}
             <Section pad='large'
                      justify='center'
                      align='center'
@@ -48,7 +47,6 @@ export default () => (
                     INSTYTUT PL 590
                 </Headline>
             </Section>
-            {/*</ScrollableAnchor>*/}
             <ScrollableAnchor id={'section1'}>
                 <Section pad='large'
                          justify='center'
