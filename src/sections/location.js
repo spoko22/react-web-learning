@@ -8,7 +8,7 @@ import Paragraph from 'grommet/components/Paragraph';
 const Location = () => (
     <Box direction="column" responsive="true" style={styles.marginTop} full="horizontal">
         <Box direction="row">
-            <Image src='http://ipl590.org.pl/upload/201703/i590C.jpg' size='medium'/>
+            <Image src={require('../img/i590C.jpg')} size='medium'/>
             <Box direction="column" justify="center" style={styles.textBox} responsive="true">
                 <Paragraph>
                     Instytut PL590 mieści się
