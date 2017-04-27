@@ -23,17 +23,19 @@ import ScrollableAnchor, {removeHash, goToTop, goToAnchor} from 'react-scrollabl
 export default () => (
     <App>
         <Header fixed='true'>
+            <Box flex={true} margin="medium">
             <Anchor href="#" onClick={() => removeHash()}>
                 <Title>
                     Instytut PL 590
                 </Title>
             </Anchor>
-            <Box flex={true} justify='end' direction='row'>
-                <Menu direction='row'>
-                    <Anchor href='#section1' onClick={() => removeHash()}> O instytucie </Anchor>
-                    <Anchor href='#section2' onClick={() => removeHash()}> Prace badawcze </Anchor>
-                    <Anchor href='#section3' onClick={() => removeHash()}> Lokalizacja </Anchor>
-                </Menu>
+            </Box>
+            <Box alignContent="end">
+            <Menu direction='row' justify="end" dropAlign={{top:'top', right: 'right'}}>
+                <Anchor href='#section1' onClick={() => removeHash()}> O instytucie </Anchor>
+                <Anchor href='#section2' onClick={() => removeHash()}> Prace badawcze </Anchor>
+                <Anchor href='#section3' onClick={() => removeHash()}> Lokalizacja </Anchor>
+            </Menu>
             </Box>
         </Header>
 
@@ -42,8 +44,8 @@ export default () => (
                      justify='center'
                      align='center'
                      size={{width: 'full', height: 'medium'}}
-                     colorIndex='light-2'>
-                <Headline margin='none'>
+                     colorIndex='neutral-4-a'>
+                <Headline margin='none' style={{textAlign: 'center'}}>
                     INSTYTUT PL 590
                 </Headline>
             </Section>
