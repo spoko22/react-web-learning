@@ -54,7 +54,7 @@ export default () => (
                          justify='center'
                          align='center'
                          full='vertical'>
-                    <Headline margin='none'>
+                    <Headline margin='none' className="brand-color-font">
                         O instytucie
                     </Headline>
                     <AboutSection />
@@ -77,7 +77,7 @@ export default () => (
                          justify='center'
                          align='center'
                          full='true'>
-                    <Headline margin='none'>
+                    <Headline margin='none' className="brand-color-font">
                         Lokalizacja siedziby
                     </Headline>
                     <Location />
