@@ -6,13 +6,11 @@ import Header from 'grommet/components/Header';
 import Article from 'grommet/components/Article';
 import Section from 'grommet/components/Section';
 import Headline from 'grommet/components/Headline';
-import Footer from 'grommet/components/Footer';
 import Anchor from 'grommet/components/Anchor';
 import Menu from 'grommet/components/Menu';
 import Paragraph from 'grommet/components/Paragraph';
 import Box from 'grommet/components/Box';
-import Hero from 'grommet/components/Hero';
-import Image from 'grommet/components/Image';
+import GeorgiaSpan from './components/GeorgiaSpan';
 
 import AboutSection from './sections/about';
 import Location from './sections/location';
@@ -46,7 +44,7 @@ export default () => (
                      size={{width: 'full', height: 'medium'}}
                      colorIndex='neutral-4-a'>
                 <Headline margin='none' style={{textAlign: 'center'}}>
-                    INSTYTUT PL 590
+                    <span>INSTYTUT PL 590</span>
                 </Headline>
             </Section>
             <ScrollableAnchor id={'section1'}>
@@ -54,8 +52,8 @@ export default () => (
                          justify='center'
                          align='center'
                          full='vertical'>
-                    <Headline margin='none' className="brand-color-font">
-                        O instytucie
+                    <Headline margin='large' className="brand-color-font">
+                        O Instytucie PL 590
                     </Headline>
                     <AboutSection />
                 </Section>

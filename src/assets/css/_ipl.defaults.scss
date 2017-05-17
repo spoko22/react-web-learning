@@ -30,6 +30,22 @@ $fonts-path: "https://fonts.gstatic.com/s/Opensans/v2";
   color: $brand-color-font;
 }
 
+.georgia-font {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: inherit;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 400;
+}
+
+.georgia-font-bold {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: inherit;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: bold;
+}
+
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;

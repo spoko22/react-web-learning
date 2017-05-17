@@ -4,14 +4,15 @@ import Box from 'grommet/components/Box';
 import SimpleMap from '../components/SimpleMap';
 import Image from 'grommet/components/Image';
 import Paragraph from 'grommet/components/Paragraph';
+import GeorgiaSpan from '../components/GeorgiaSpan';
 
 const Location = () => (
     <Box direction="column" responsive="true" style={styles.marginTop} full="horizontal">
         <Box direction="row">
-            <Image src={require('../img/i590C.jpg')} size='medium'/>
+            <Image src={require('../img/i590C.jpg')} size="medium"/>
             <Box direction="column" justify="center" style={styles.textBox} responsive="true">
                 <Paragraph>
-                    Instytut PL590 mieści się
+                    <GeorgiaSpan/> mieści się
                     w apartamentach  dawnego
                     Domu Bankowego
                     Komunalnej  Kasy Oszczędnościowej, secesyjnej  kamienicy Wilhelma Rakmana.
