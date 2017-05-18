@@ -27,7 +27,7 @@ $text-strong-font-weight: 500;
 $fonts-path: "https://fonts.gstatic.com/s/Opensans/v2";
 
 .brand-color-font {
-  color: $brand-color-font;
+  color: $brand-color-font !important;
 }
 
 .georgia-font {

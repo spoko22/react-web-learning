@@ -3,7 +3,7 @@ import Paragraph from 'grommet/components/Paragraph';
 
 const StyledParagraph = (props) => {
     return (
-        <Paragraph style={styles.paragraphStyle} margin="small">
+        <Paragraph className={props.classes} style={styles.paragraphStyle} margin="small">
             { props.children }
         </Paragraph>
     )

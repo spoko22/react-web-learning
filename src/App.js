@@ -53,7 +53,7 @@ export default () => (
                          align='center'
                          full='vertical'>
                     <Headline margin='large' className="brand-color-font">
-                        O Instytucie PL 590
+                        <GeorgiaSpan customText="O Instytucie PL 590"/>
                     </Headline>
                     <AboutSection />
                 </Section>
@@ -65,7 +65,7 @@ export default () => (
                          full='vertical'
                          colorIndex='grey-4'>
                     <Headline margin='none'>
-                        Prace badawcze
+                        <GeorgiaSpan customText="Prace badawcze"/>
                     </Headline>
                     <ResearchSection />
                 </Section>
@@ -76,7 +76,7 @@ export default () => (
                          align='center'
                          full='true'>
                     <Headline margin='none' className="brand-color-font">
-                        Lokalizacja siedziby
+                        <GeorgiaSpan customText="Lokalizacja siedziby"/>
                     </Headline>
                     <Location />
                 </Section>
