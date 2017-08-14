@@ -20,6 +20,7 @@ class SimpleMap extends Component {
   render() {
     return (
       <GoogleMapReact
+        apiKey={"AIzaSyANb3h2mONMeBtlXxBLARDpePPpEvqXS-c"}
         defaultCenter={this.props.center}
         defaultZoom={this.props.zoom}
       >
